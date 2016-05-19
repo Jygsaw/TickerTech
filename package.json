@@ -19,6 +19,7 @@
     "typings": "typings"
   },
   "dependencies": {
+    "express": "^4.13.4",
     "typescript": "^1.8.10",
     "typings": "^1.0.4"
   },
