@@ -21,5 +21,8 @@
   "dependencies": {
     "typescript": "^1.8.10",
     "typings": "^1.0.4"
+  },
+  "devDependencies": {
+    "concurrently": "^2.1.0",
   }
 }
