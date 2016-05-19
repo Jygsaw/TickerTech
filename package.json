@@ -13,5 +13,11 @@
     "url": "https://github.com/jygsaw/tickertech/issues"
   },
   "scripts": {
+    "postinstall": "tsc",
+    "tsc": "tsc",
+    "tsc:w": "tsc -w"
   },
+  "dependencies": {
+    "typescript": "^1.8.10"
+  }
 }

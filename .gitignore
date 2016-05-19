@@ -3,3 +3,7 @@ npm-debug.log
 
 # Dependency directories
 node_modules
+
+# Typescript generated files
+*.js
+*.js.map
