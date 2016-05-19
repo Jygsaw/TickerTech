@@ -7,3 +7,6 @@ node_modules
 # Typescript generated files
 *.js
 *.js.map
+
+# Typings definition files
+typings
