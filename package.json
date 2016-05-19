@@ -13,7 +13,10 @@
     "url": "https://github.com/jygsaw/tickertech/issues"
   },
   "scripts": {
+    "start": "node server.js",
     "postinstall": "typings install && tsc",
+    "dev": "concurrently \"npm run tsc:w\" \"npm run nodemon server.js\"",
+    "nodemon": "nodemon",
     "tsc": "tsc",
     "tsc:w": "tsc -w",
     "typings": "typings"
