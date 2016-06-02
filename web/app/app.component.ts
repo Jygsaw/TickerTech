@@ -2,6 +2,9 @@ import { Component } from '@angular/core'
 
 @Component({
   selector: 'tickertech-app',
-  template: '<h1>TickerTech App</h1>'
+  template: '<h1>{{title}}</h1><h2>{{hero}}</h2>',
 })
-export class AppComponent {}
+export class AppComponent {
+  title = 'Tour of Heroes';
+  hero = 'Windstorm';
+}
