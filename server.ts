@@ -11,9 +11,9 @@ app.set('port', (process.env.PORT || 5000));
 app.use('/node_modules', express.static(__dirname + '/node_modules'));
 app.use(express.static(__dirname + '/web'));
 
-// declare routes
-app.get('/', function(request, response) {
-  response.render('web/index');
+// send all routes to angular index page
+app.use(function (request, response) {
+  response.sendFile(__dirname + '/web/index.html');
 });
 
 // start web server
