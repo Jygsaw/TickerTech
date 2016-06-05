@@ -5,6 +5,7 @@ import { HeroService } from "./hero.service";
 
 import { DashboardComponent } from "./dashboard.component";
 import { HeroesComponent } from "./heroes.component";
+import { HeroDetailComponent } from "./hero-detail.component";
 
 @Component({
   selector: "app",
@@ -30,6 +31,11 @@ import { HeroesComponent } from "./heroes.component";
     path: "/heroes",
     name: "Heroes",
     component: HeroesComponent,
+  },
+  {
+    path: "/detail/:id",
+    name: "HeroDetail",
+    component: HeroDetailComponent,
   }
 ])
 export class AppComponent {
