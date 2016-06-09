@@ -26,9 +26,9 @@ export class HeroService {
 
   save(hero: Hero): Promise<Hero> {
     if (hero.id) {
-      return this.post(hero);
-    } else {
       return this.put(hero);
+    } else {
+      return this.post(hero);
     }
   }
 
@@ -72,7 +72,7 @@ export class HeroService {
   }
 
   private handleError(error: any) {
-    // console.error("An error occurred:", error);
+    console.error("An error occurred:", error);
     return Promise.reject(error.message || error);
   }
 }
